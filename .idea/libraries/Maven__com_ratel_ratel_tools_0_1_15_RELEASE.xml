@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ratel:ratel-tools:0.1.15.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ratel/ratel-tools/0.1.15.RELEASE/ratel-tools-0.1.15.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ratel/ratel-tools/0.1.15.RELEASE/ratel-tools-0.1.15.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ratel/ratel-tools/0.1.15.RELEASE/ratel-tools-0.1.15.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

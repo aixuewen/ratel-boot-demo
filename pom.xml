@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ratel-parent</artifactId>
+        <groupId>com.ratel</groupId>
+        <version>0.1.15.RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ratel-boot-demo</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-ldap</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-ldap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.unboundid</groupId>
+            <artifactId>unboundid-ldapsdk</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>ratel-system</artifactId>
+            <version>${ratel.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>ratel-oauth2-server</artifactId>
+            <version>${ratel.parent.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.ratel</groupId>-->
+<!--            <artifactId>ratel-generator</artifactId>-->
+<!--            <version>${ratel.parent.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>ratel-cache-ehcache</artifactId>
+            <version>${ratel.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>ratel-quartz</artifactId>
+            <version>${ratel.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>fluent-hc</artifactId>
+            <!-- <version>4.5.3</version> -->
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.30</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>ratel</id>
+            <name>ratel nexus</name>
+            <url>http://152.136.133.34:8081/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

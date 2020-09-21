@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="defaultCache">
+
+	<diskStore path="../temp/ratel/ehcache" />
+
+	<!-- 默认缓存配置. 自动失效：最后一次访问时间间隔300秒失效，若没有访问过自创建时间600秒失效。-->
+	<defaultCache maxEntriesLocalHeap="1000" eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		overflowToDisk="true" statistics="true"/>
+
+	<!-- 系统缓存 -->
+	<cache name="sysCache" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<!-- 用户缓存 -->
+	<cache name="sysUser" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<!-- 角色缓存 -->
+	<cache name="sysRole" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<!-- 数据字典缓存 -->
+	<cache name="sysDict" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<cache name="sysDictDetail" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<!-- 存储典缓存 -->
+	<cache name="sysStorage" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<cache name="sysDept" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<!-- 鉴权客户端缓存 -->
+	<cache name="oauthClient" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+
+	<cache name="sysMenu" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<cache name="genConfig" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+	<cache name="quartzJob" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+
+	<!-- 集团缓存 -->
+	<cache name="corpCache" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+
+	<!-- 内容管理模块缓存 -->
+	<cache name="cmsCache" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+
+	<!-- email模块缓存 -->
+	<cache name="email" maxEntriesLocalHeap="1000" eternal="true" overflowToDisk="true" statistics="true"/>
+
+	<!-- 工作流模块缓存 -->
+	<cache name="actCache" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true" statistics="true"/>
+
+    <!-- 简单页面缓存 -->
+    <cache name="pageCachingFilter" maxEntriesLocalHeap="1000" eternal="false" timeToIdleSeconds="120"
+    	timeToLiveSeconds="120" overflowToDisk="true" memoryStoreEvictionPolicy="LFU" statistics="true"/>
+
+	<!-- 系统活动会话缓存 -->
+    <cache name="activeSessionsCache" maxEntriesLocalHeap="10000" eternal="true" overflowToDisk="true"
+           diskPersistent="true" diskExpiryThreadIntervalSeconds="600" statistics="true"/>
+
+</ehcache>
