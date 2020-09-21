@@ -1,10 +1,5 @@
 #配置数据源
 spring:
-  ldap:
-    urls: ldap://192.168.5.90:389
-    base: dc=ketdz,dc=com
-    username: cn=manager,dc=ketdz,dc=com
-    password: secret
   datasource:
     druid:
       #db-type: com.alibaba.druid.pool.DruidDataSource

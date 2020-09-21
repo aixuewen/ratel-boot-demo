@@ -15,39 +15,17 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-ldap</artifactId>
-            <version>2.1.4.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-ldap</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.unboundid</groupId>
-            <artifactId>unboundid-ldapsdk</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.ratel</groupId>
             <artifactId>ratel-system</artifactId>
             <version>${ratel.parent.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.ratel</groupId>
             <artifactId>ratel-oauth2-server</artifactId>
             <version>${ratel.parent.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.ratel</groupId>-->
-<!--            <artifactId>ratel-generator</artifactId>-->
-<!--            <version>${ratel.parent.version}</version>-->
-<!--        </dependency>-->
+
         <dependency>
             <groupId>com.ratel</groupId>
             <artifactId>ratel-cache-ehcache</artifactId>
@@ -58,6 +36,7 @@
             <artifactId>ratel-quartz</artifactId>
             <version>${ratel.parent.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>fluent-hc</artifactId>
